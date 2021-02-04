@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dimens_20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/cancel_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/dimens_10dp"
+                android:src="@drawable/ic_cancel" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dialog_profile_image"
+                android:layout_width="@dimen/dimens_100dp"
+                android:layout_height="@dimen/dimens_100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimens_20dp"
+                android:src="@drawable/ic_email" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_porfile_dialog_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:hint="@string/hair_specialist"
+                android:maxLines="1"
+                android:padding="@dimen/dimens_5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/dimens_16sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/ratingBar_dialog"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:numStars="5" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_porfile_dialog_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimens_30dp"
+                android:layout_marginEnd="@dimen/dimens_30dp"
+                android:ellipsize="end"
+                android:ems="3"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:hint="@string/hair_specialist"
+                android:maxLines="3"
+                android:padding="@dimen/dimens_5dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/dimens_12sp"
+                android:layout_marginBottom="@dimen/dimens_20dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

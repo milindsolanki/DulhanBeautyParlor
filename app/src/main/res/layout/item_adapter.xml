@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_10dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/dimens_100dp"
+            android:layout_height="@dimen/dimens_100dp"
+            android:elevation="@dimen/dimens_5dp"
+            app:cardCornerRadius="@dimen/dimens_10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_item_image_lable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimens_5dp"
+                    android:paddingLeft="@dimen/dimens_10dp"
+                    android:text="@string/services"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_12sp" />
+
+                <ImageView
+                    android:id="@+id/image_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="@dimen/dimens_5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hair_style" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimens_10dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_item_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:ems="3"
+                android:fontFamily="@font/montserrat_regular"
+                android:maxLines="2"
+                android:padding="@dimen/dimens_5dp"
+                android:paddingLeft="@dimen/dimens_10dp"
+                android:text="@string/services"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimens_12sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_item_book"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_30dp"
+                android:layout_marginTop="@dimen/dimens_10dp"
+                android:background="@drawable/btn_signin_bg"
+                android:fontFamily="@font/montserrat_regular"
+                android:paddingStart="@dimen/dimens_10dp"
+                android:paddingEnd="@dimen/dimens_10dp"
+                android:text="@string/book_an_appoinment"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimens_12sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <ImageView
+            android:id="@+id/image_item_forward"
+            android:layout_width="@dimen/dimens_30dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dimens_10dp"
+            android:src="@drawable/ic_arrow_forward" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

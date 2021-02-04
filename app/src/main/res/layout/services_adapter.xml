@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimens_10dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/services_item_image"
+        android:layout_width="@dimen/dimens_150dp"
+        android:layout_height="@dimen/dimens_150dp"
+        android:elevation="@dimen/dimens_10dp"
+        app:cardCornerRadius="@dimen/dimens_10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_services"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/services" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_services_logo"
+                android:layout_width="@dimen/dimens_30dp"
+                android:layout_height="@dimen/dimens_30dp"
+                android:layout_margin="@dimen/dimens_10dp"
+                android:src="@drawable/hair_style" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_services_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/dimens_10dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/montserrat_regular"
+                android:maxLines="2"
+                android:padding="@dimen/dimens_5dp"
+                android:text="@string/services"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimens_12sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

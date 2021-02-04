@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "73761659006",
+    "project_id": "dulhanbeautyparlor-e0182",
+    "storage_bucket": "dulhanbeautyparlor-e0182.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:73761659006:android:e147d3abea4a7b6d68a02f",
+        "android_client_info": {
+          "package_name": "com.example.dulhanbeautyparlor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "73761659006-6r7r5hb79t11hkrpfs4g5ra1tsq9vhiv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnN0qqS3rGbQ-B9ql7BCGMHgzAcf657mQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "73761659006-6r7r5hb79t11hkrpfs4g5ra1tsq9vhiv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

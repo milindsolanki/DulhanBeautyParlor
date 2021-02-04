@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".activity.MoreInfoActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimens_20dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_200dp"
+                android:layout_gravity="center"
+                android:elevation="@dimen/dimens_10dp"
+                app:cardCornerRadius="@dimen/dimens_10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_200dp">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/more_info_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:id="@+id/lay_indicator_more_info"
+                        android:layout_width="@dimen/dimens_200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/dimens_10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dimens_15dp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:maxLines="1"
+                android:padding="@dimen/dimens_2dp"
+                android:text="@string/hair_specialist"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimens_18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_more_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimens_10dp"
+                android:layout_marginBottom="@dimen/dimens_50dp"
+                android:ellipsize="end"
+                android:ems="3"
+                android:fontFamily="@font/montserrat_regular"
+                android:padding="@dimen/dimens_2dp"
+                android:scrollbars="vertical"
+                android:text="@string/hair_specialist"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimens_14sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_booking"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dimens_30dp"
+            android:background="@drawable/btn_signin_bg"
+            android:fontFamily="@font/montserrat_regular"
+            android:onClick="onClickBooking"
+            android:text="@string/book_an_appoinment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimens_16sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

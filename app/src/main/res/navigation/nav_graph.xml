@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+   >
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.dulhanbeautyparlor.fragment.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <!--<action
+            android:id="@+id/action_nav_home_to_nav_services"
+            app:destination="@id/nav_services"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_ItemList"
+            app:destination="@id/nav_ItemList"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/nav_services"
+        android:name="com.example.dulhanbeautyparlor.fragment.ServicesFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_services">
+        <!--<action
+            android:id="@+id/action_nav_services_to_nav_portFolio"
+            app:destination="@id/nav_portFolio"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_portFolio"
+        android:name="com.example.dulhanbeautyparlor.fragment.PortFolioFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_portfolio">
+        <!--<action
+            android:id="@+id/action_nav_portFolio_to_nav_tips"
+            app:destination="@id/nav_tips"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/nav_tips"
+        android:name="com.example.dulhanbeautyparlor.fragment.TipsFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_tips" />
+    <fragment
+        android:id="@+id/nav_ItemList"
+        android:name="com.example.dulhanbeautyparlor.fragment.ItemListFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_portfolio">
+        <!--<action
+            android:id="@+id/action_nav_ItemList_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />-->
+    </fragment>
+</navigation>

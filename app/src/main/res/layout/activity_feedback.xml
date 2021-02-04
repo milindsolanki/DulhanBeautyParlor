@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".activity.FeedbackActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimens_30dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_name_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimens_18sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_30dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/rate_us"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimens_18sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_emailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/leave_a_message"
+            android:maxLines="3"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/dimens_18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimens_30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimens_20dp"
+            android:background="@drawable/btn_signin_bg"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingLeft="@dimen/dimens_50dp"
+            android:paddingRight="@dimen/dimens_50dp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimens_18sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
