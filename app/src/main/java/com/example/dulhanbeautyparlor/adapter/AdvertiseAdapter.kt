@@ -28,14 +28,11 @@ class AdvertiseAdapter(
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        Log.e("LogImage", position.toString())
         Glide.with(context!!).load(list[position].image).centerCrop()
             .into(holder.itemView.advertise_image)
     }
 
-    override fun getItemCount(): Int {
-        return 0
-    }
+    override fun getItemCount(): Int =list.size
 
 
 }

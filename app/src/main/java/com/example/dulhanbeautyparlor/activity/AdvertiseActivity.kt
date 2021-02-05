@@ -54,7 +54,7 @@ class AdvertiseActivity : BasicActivity() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
                 // val dots = arrayOfNulls<ImageView>(mAdapter.itemCount)
-                for (i in 0 until 6) {
+                for (i in 0 until mAdapter.itemCount) {
                     dots[i]!!
                         .setImageDrawable(
                             ContextCompat.getDrawable(

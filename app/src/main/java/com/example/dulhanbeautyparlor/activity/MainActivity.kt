@@ -120,7 +120,6 @@ class MainActivity : BasicActivity(), ButtonOk {
     private val navigationView = NavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.nav_home -> {
-                toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.txt_title)
                 toolbar!!.title = resources.getString(R.string.home)
                 fragment = HomeFragment()
                 replacefragment(fragment)

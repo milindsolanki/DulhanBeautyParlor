@@ -1,7 +1,6 @@
 package com.example.dulhanbeautyparlor.fragment
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -26,7 +25,6 @@ import kotlinx.android.synthetic.main.fragment_home.view.*
 import kotlinx.android.synthetic.main.hair_specialist_adapter.view.*
 import kotlinx.android.synthetic.main.home_adapter.view.*
 import kotlinx.android.synthetic.main.special_offer_adapter.view.*
-import kotlin.collections.ArrayList
 
 
 class HomeFragment : BasicFragment() {
@@ -56,15 +54,18 @@ class HomeFragment : BasicFragment() {
         homeItemRecyclerView(view)
 
         indicatorlay = view.findViewById(R.id.lay_indicator_home) as LinearLayout
-        mAdapter = AdvertiseAdapter(context, datalist, view.home_viewpager)
-        view.home_viewpager.adapter = mAdapter
-//        setupIndicator(dots, mAdapter, indicatorlay!!)
-//        createSlider(mAdapter, "", view.home_viewpager)
+
+        val viewHomePager = view.findViewById<ViewPager2>(R.id.home_viewpager)
+        mAdapter = AdvertiseAdapter(context, datalist, viewHomePager)
+
+        viewHomePager.adapter = mAdapter
+        setupIndicator(dots, mAdapter, indicatorlay!!)
+        createSlider(mAdapter, "", view.home_viewpager)
         view.home_viewpager.registerOnPageChangeCallback(object :
             ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
-                for (i in 0 until mAdapter.itemCount) {
+                for (i in 0 until mAdapter.itemCount ) {
                     dots[i]!!
                         .setImageDrawable(
                             activity?.let {

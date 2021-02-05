@@ -61,11 +61,8 @@ open class BasicActivity : AppCompatActivity() {
 
         val handler = Handler()
         val Update = Runnable {
-            if (currentPage == mAdapter.itemCount) {
-                currentPage = 0
 
-            }
-            /* if (intent.isEmpty()) {
+             if (intent.isEmpty()) {
                  if (currentPage == mAdapter.itemCount) {
                      currentPage = 0
 
@@ -74,7 +71,7 @@ open class BasicActivity : AppCompatActivity() {
                  if (currentPage == mAdapter.itemCount) {
                      startActivity(Intent(this, MainActivity::class.java))
                  }
-             }*/
+             }
             viewpager.setCurrentItem(currentPage++, true)
 
 

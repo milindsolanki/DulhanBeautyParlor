@@ -37,7 +37,7 @@
             android:textStyle="bold" />
 
         <androidx.appcompat.widget.AppCompatRatingBar
-            android:id="@+id/ratingBar"
+            android:id="@+id/ratingBarFeedBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimens_5dp"
@@ -45,7 +45,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/edt_emailId"
+            android:id="@+id/edt_feedback_massage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
@@ -59,7 +59,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_submit"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/dimens_30dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/dimens_20dp"
             android:background="@drawable/btn_signin_bg"
